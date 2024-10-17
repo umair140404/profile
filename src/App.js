@@ -9,7 +9,7 @@ function App() {
       <PageLayout>
         <Home />
       </PageLayout>
-    </ThemeProvider>
+    </ThemeProvider> 
   );
 }
 
