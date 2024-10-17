@@ -1,0 +1,40 @@
+import Hero from "../components/Hero";
+import about from "../data/about";
+import CardContainer from "../components/CardContainer";
+import HeadingAndContent from "../components/HeadingAndContent";
+import WorkExperienceTimeline from "../components/WorkExperienceTimeline";
+import education from "../data/education";
+import experience from "../data/experience";
+import teachingExperience from "../data/teachingExperience";
+import projects from "../data/projects";
+import ProjectList from "../components/ProjectList";
+import publications from "../data/publications";
+import PublicationList from "../components/PublicationList";
+
+const Home = () => {
+  return (
+    <div className="space-y-12">
+      <Hero />
+      <HeadingAndContent title={"About Me"}>
+        <div className="text-md md:text-lg">{about}</div>
+      </HeadingAndContent>
+      <HeadingAndContent title={"Publications"}>
+        <PublicationList publications={publications} />
+      </HeadingAndContent>
+      <HeadingAndContent title={"Projects"}>
+        <ProjectList projects={projects} />
+      </HeadingAndContent>
+      <HeadingAndContent title={"Education"}>
+        <CardContainer cardData={education} />
+      </HeadingAndContent>
+      <HeadingAndContent title={"Teaching Experience"}>
+        {<WorkExperienceTimeline experience={teachingExperience} />}
+      </HeadingAndContent>
+      <HeadingAndContent title={"Work Experience"}>
+        {<WorkExperienceTimeline experience={experience} />}
+      </HeadingAndContent>
+    </div>
+  );
+};
+
+export default Home;
