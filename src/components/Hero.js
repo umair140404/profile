@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="lg:w-1/3 flex flex-col items-center lg:items-end">
           <img
             src="profile-pic.jpg"
-            className="w-[250px] h-[250px] border rounded-full"
+            className="w-[250px] h-[250px] rounded-full"
             alt="Profile"
           />
         </div>
