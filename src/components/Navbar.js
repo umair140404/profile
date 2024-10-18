@@ -27,7 +27,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-300 space-y-4 rounded-box z-[1] mt-3 w-52 px-2 py-4 shadow"
+            className={`menu menu-sm bg-base-100 dropdown-content space-y-4 rounded-box z-[1] mt-3 w-52 px-2 py-4 shadow-xl`}
           >
             {navbarItems.map((item) => {
               return (
@@ -52,14 +52,17 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <div className="flex items-center gap-2 justify-between p-1">
-          <FaMoon className={`${isDarkTheme ? "text-white" : "text-black"}`} />
+          <FaMoon
+            size={16}
+            className={`${isDarkTheme ? "text-white" : "text-black"}`}
+          />
           <input
             type="checkbox"
             className="toggle"
             defaultChecked
             onClick={toggleTheme}
           />
-          <FaSun className={`text-yellow-500`} />
+          <FaSun size={18} className={`text-yellow-500`} />
         </div>
       </div>
     </div>

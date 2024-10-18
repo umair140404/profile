@@ -4,6 +4,7 @@ const experience = [
     year: "Jul. 2024",
     title: "Junior Consultant - AI Department",
     company: "Systems Limited",
+    href: "https://systemsltd.com",
     description: [
       "Developed a comprehensive PDF parsing pipeline capable of handling regular text, headings, subheadings, paragraphs, tables, images, and formulas, utilizing publicly available SOA models.",
       "Integrated the pipeline with existing RAG architectures, resulting in significant enhancements in information retrieval and document querying.",
@@ -16,6 +17,7 @@ const experience = [
     year: "Jul. 2023 - Jul. 2024",
     title: "Associate Consultant - AI Department",
     company: "Systems Limited",
+    href: "https://systemsltd.com",
     description: [
       "Developed a suite of Generative AI solutions for the insurance industry.",
       "Created multimodal LLM-based pipelines for VQA and image-based information extraction, outperforming in-house OCR methods.",
@@ -28,6 +30,7 @@ const experience = [
     year: "Jun. 2022 – Aug. 2022",
     title: "ML & SE Intern",
     company: "Aletheia-AI",
+    href: "https://pk.linkedin.com/company/aletheia-ai",
     description: [
       "Developed pipelines for multi-class vehicle detection and number plate detection using YOLOv5.",
       "Implemented systems for person detection and facial recognition with YOLOv5.",
@@ -41,6 +44,7 @@ const experience = [
     year: "Jun. 2021 – Jul. 2021",
     title: "SE Intern",
     company: "Wateen Telecom",
+    href: "https://wateen.com/",
     description: [
       "Conversion of High-Level Design (HLD) into software using Python programming.",
       "Simulation of Link Budget Analysis in Python.",

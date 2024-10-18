@@ -1,7 +1,14 @@
 import React from "react";
 import { useTheme } from "./ThemeContext";
 
-const WorkExperienceItem = ({ year, title, description, isStart, company }) => {
+const WorkExperienceItem = ({
+  year,
+  title,
+  description,
+  isStart,
+  company,
+  href,
+}) => {
   const { isDarkTheme } = useTheme();
 
   return (
@@ -24,7 +31,15 @@ const WorkExperienceItem = ({ year, title, description, isStart, company }) => {
         <time className="font-mono italic">{year}</time>
         {company && (
           <div className="text-lg">
-            <span className="font-bold">{company}</span> - {title}
+            <a
+              className="font-bold link link-primary link-hover"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={href}
+            >
+              {company}
+            </a>{" "}
+            - {title}
           </div>
         )}
         <ul

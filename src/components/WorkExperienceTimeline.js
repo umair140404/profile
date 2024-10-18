@@ -12,6 +12,7 @@ const WorkExperienceTimeline = ({ experience }) => {
           description={exp.description}
           company={exp.company}
           isStart={false}
+          href={exp.href}
         />
       ))}
     </ul>

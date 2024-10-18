@@ -35,8 +35,7 @@ const interests = [
     </h1>
     <p>
       Examining fairness and bias mitigation in NLP applications, as well as
-      ensuring the responsible handling of personally identifiable information
-      (PII) to promote user safety.
+      ensuring the responsible handling of PII to promote user safety.
     </p>
   </div>,
 ];
