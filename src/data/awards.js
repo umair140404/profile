@@ -1,8 +1,8 @@
 const honorsAndAwards = [
-  "Dean’s Honor List in Freshman year for maintaining a CGPA above 3.6",
-  "Dean’s Honor List in Sophomore year for maintaining a CGPA above 3.6",
-  "Dean’s Honor List in Junior year for maintaining a CGPA above 3.6",
-//   "100% Merit scholarship in A Levels (both years)",
+  <div>
+    <h1 className="text-xl font-semibold">Dean’s Honor List (2019 - 2022)</h1>
+    <p>Dean’s Honor List in Freshman, Sophomore and Junior years</p>
+  </div>,
 ];
 
 export default honorsAndAwards;

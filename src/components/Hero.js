@@ -10,7 +10,8 @@ const Hero = () => {
         <div className="lg:w-1/3 flex flex-col items-center lg:items-end">
           <img
             src="profile-pic.jpg"
-            className="w-[250px] h-[250px] rounded-full"
+            className="w-[250px] h-[250px] border rounded-full"
+            alt="Profile"
           />
         </div>
         <div className="lg:w-2/3 space-y-8 lg:mt-0 mt-8">
@@ -23,11 +24,13 @@ const Hero = () => {
             </h1>
             <div className="lg:text-left text-center">
               <div className="text-md">
-                <a
-                  href="mailto:23100053@lums.edu.pk"
-                  className="inline-block link link-primary link-hover"
-                >
-                  23100053@lums.edu.pk{" "}
+                <div className="inline-block">
+                  <a
+                    href="mailto:23100053@lums.edu.pk"
+                    className="link link-primary link-hover"
+                  >
+                    23100053@lums.edu.pk
+                  </a>{" "}
                   <strong
                     className={`inline-block ${
                       isDarkTheme ? "text-red-500" : "text-red-600"
@@ -35,7 +38,7 @@ const Hero = () => {
                   >
                     (primary)
                   </strong>
-                </a>
+                </div>
               </div>
 
               <div className="text-md">

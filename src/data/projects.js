@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: "Sentiment Classification using BERT on GoEmotions",
-    type: "NLP",
+    type: "Natural Language Processing",
     description: "",
     bulletPoints: [
       "Multi-label sentiment classification on GoEmotions dataset using HuggingFace framework",
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     title: "Lane Change Warning System",
-    type: "Computer Vision/Machine Learning",
+    type: "Computer Vision & Machine Learning",
     description: "",
     bulletPoints: [
       "Developed a pipeline to read a dashcam video’s frames, detect vehicles using YOLOv7 and lanes using LaneNet",

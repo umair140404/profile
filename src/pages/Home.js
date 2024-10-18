@@ -20,31 +20,34 @@ const Home = () => {
   return (
     <div className="space-y-12">
       <Hero />
-      <HeadingAndContent title={"Research Interests"}>
-        <TagList itemList={interests} />
-      </HeadingAndContent>
-      <HeadingAndContent title={"About Me"}>
+      <HeadingAndContent title={"About Me"} id={"about"}>
         <div className="text-md md:text-lg">{about}</div>
       </HeadingAndContent>
-      <HeadingAndContent title={"Publications"}>
+      <HeadingAndContent title={"Research Interests"} id={"interests"}>
+        <CardContainer cardData={interests} />
+      </HeadingAndContent>
+      <HeadingAndContent title={"Publications"} id={"publications"}>
         <PublicationList publications={publications} />
       </HeadingAndContent>
-      <HeadingAndContent title={"Projects"}>
+      <HeadingAndContent title={"Projects"} id={"projects"}>
         <ProjectList projects={projects} />
       </HeadingAndContent>
-      <HeadingAndContent title={"Education"}>
+      <HeadingAndContent title={"Education"} id={"education"}>
         <EducationCardContainer cardData={education} />
       </HeadingAndContent>
-      <HeadingAndContent title={"Teaching Experience"}>
+      <HeadingAndContent title={"Teaching Experience"} id={"experience"}>
         {<WorkExperienceTimeline experience={teachingExperience} />}
       </HeadingAndContent>
       <HeadingAndContent title={"Work Experience"}>
         {<WorkExperienceTimeline experience={experience} />}
       </HeadingAndContent>
-      <HeadingAndContent title={"Courses Taken During BS"}>
+      <HeadingAndContent
+        title={"Relevant Courses Taken During BS"}
+        id={"courses"}
+      >
         <TagList itemList={coursesTaken} />
       </HeadingAndContent>
-      <HeadingAndContent title={"Honors & Awards"}>
+      <HeadingAndContent title={"Honors & Awards"} id={"honors"}>
         <CardContainer cardData={honorsAndAwards} />
       </HeadingAndContent>
     </div>

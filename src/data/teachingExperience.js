@@ -4,9 +4,8 @@ const teachingExperience = [
     title: "TA for the course Data Structures",
     company: "Lahore University of Management Sciences",
     description: [
-      "Created and checked assignments",
-      "Created and checked quizzes",
-      "Held office hours",
+      "Created and checked assignments & quizzes",
+      "Held tutorials & office hours",
     ],
   },
 ];

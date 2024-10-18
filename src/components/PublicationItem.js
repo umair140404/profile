@@ -8,7 +8,7 @@ const PublicationItem = ({ name, status, authors, abstract, links }) => {
       <p>
         Authors: <strong>Umair Yousaf</strong>, {authors}
       </p>
-      <p className="my-4">
+      <p className="my-4 italic">
         <strong>Abstract: </strong>
         {abstract}
       </p>

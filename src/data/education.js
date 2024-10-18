@@ -6,7 +6,7 @@ const education = [
     startDate: "2019",
     endDate: "2023",
     description:
-      "Completed a comprehensive program focusing on software engineering, machine learning, and data science.",
+      "Completed a comprehensive program focusing on natural language processing, deep learning, and computer vision.",
   },
 ];
 

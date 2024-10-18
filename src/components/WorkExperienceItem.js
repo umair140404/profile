@@ -28,7 +28,7 @@ const WorkExperienceItem = ({ year, title, description, isStart, company }) => {
           </div>
         )}
         <ul
-          className="md:max-w-[40vw]"
+          className="md:max-w-[45vw]"
           style={{ listStyleType: "disc", paddingLeft: "20px" }}
         >
           {description !== undefined &&
