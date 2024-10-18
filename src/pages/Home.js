@@ -10,15 +10,16 @@ import projects from "../data/projects";
 import ProjectList from "../components/ProjectList";
 import publications from "../data/publications";
 import PublicationList from "../components/PublicationList";
-import InterestsList from "../components/InterestList";
+import TagList from "../components/TagList";
 import interests from "../data/interests";
+import coursesTaken from "../data/coursesTaken";
 
 const Home = () => {
   return (
     <div className="space-y-12">
       <Hero />
       <HeadingAndContent title={"Research Interests"}>
-        <InterestsList interests={interests} />
+        <TagList itemList={interests} />
       </HeadingAndContent>
       <HeadingAndContent title={"About Me"}>
         <div className="text-md md:text-lg">{about}</div>
@@ -37,6 +38,9 @@ const Home = () => {
       </HeadingAndContent>
       <HeadingAndContent title={"Work Experience"}>
         {<WorkExperienceTimeline experience={experience} />}
+      </HeadingAndContent>
+      <HeadingAndContent title={"Courses Taken During BS"}>
+        <TagList itemList={coursesTaken} />
       </HeadingAndContent>
     </div>
   );
