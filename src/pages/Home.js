@@ -1,6 +1,6 @@
 import Hero from "../components/Hero";
 import about from "../data/about";
-import CardContainer from "../components/CardContainer";
+import EducationCardContainer from "../components/EducationCardContainer";
 import HeadingAndContent from "../components/HeadingAndContent";
 import WorkExperienceTimeline from "../components/WorkExperienceTimeline";
 import education from "../data/education";
@@ -13,6 +13,8 @@ import PublicationList from "../components/PublicationList";
 import TagList from "../components/TagList";
 import interests from "../data/interests";
 import coursesTaken from "../data/coursesTaken";
+import honorsAndAwards from "../data/awards";
+import CardContainer from "../components/CardContainer";
 
 const Home = () => {
   return (
@@ -31,7 +33,7 @@ const Home = () => {
         <ProjectList projects={projects} />
       </HeadingAndContent>
       <HeadingAndContent title={"Education"}>
-        <CardContainer cardData={education} />
+        <EducationCardContainer cardData={education} />
       </HeadingAndContent>
       <HeadingAndContent title={"Teaching Experience"}>
         {<WorkExperienceTimeline experience={teachingExperience} />}
@@ -41,6 +43,9 @@ const Home = () => {
       </HeadingAndContent>
       <HeadingAndContent title={"Courses Taken During BS"}>
         <TagList itemList={coursesTaken} />
+      </HeadingAndContent>
+      <HeadingAndContent title={"Honors & Awards"}>
+        <CardContainer cardData={honorsAndAwards} />
       </HeadingAndContent>
     </div>
   );

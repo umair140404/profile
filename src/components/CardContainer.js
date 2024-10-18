@@ -4,8 +4,8 @@ import Card from "./Card";
 const CardContainer = ({ cardData }) => {
   return (
     <div className="space-y-4">
-      {cardData.map((ed, index) => (
-        <Card key={index} cardItem={ed} />
+      {cardData.map((item, index) => (
+        <Card key={index}>{item}</Card>
       ))}
     </div>
   );
