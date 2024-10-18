@@ -22,7 +22,7 @@ const SocialLinks = () => {
         </a>
       ))}
       <a
-        href="/CV_UmairYousaf.pdf"
+        href="CV_UmairYousaf.pdf"
         download
         className="btn btn-primary flex items-center gap-2 hover:scale-105 transition-transform duration-200"
       >
