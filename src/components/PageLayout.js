@@ -17,7 +17,7 @@ const PageLayout = ({ children }) => {
           <FaSun className="text-yellow-400" />
         )}
       </button>
-      <div className="py-[5%] lg:mx-[22%] mx-[5%]">{children}</div>
+      <div className="py-[5%] lg:mx-[20%] mx-[5%]">{children}</div>
     </div>
   );
 };

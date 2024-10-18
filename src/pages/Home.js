@@ -10,11 +10,16 @@ import projects from "../data/projects";
 import ProjectList from "../components/ProjectList";
 import publications from "../data/publications";
 import PublicationList from "../components/PublicationList";
+import InterestsList from "../components/InterestList";
+import interests from "../data/interests";
 
 const Home = () => {
   return (
     <div className="space-y-12">
       <Hero />
+      <HeadingAndContent title={"Research Interests"}>
+        <InterestsList interests={interests} />
+      </HeadingAndContent>
       <HeadingAndContent title={"About Me"}>
         <div className="text-md md:text-lg">{about}</div>
       </HeadingAndContent>

@@ -24,7 +24,7 @@ const SocialLinks = () => {
       <a
         href="/CV_UmairYousaf.pdf"
         download
-        className="btn btn-outline btn-primary flex items-center gap-2 hover:scale-105 transition-transform duration-200"
+        className="btn btn-primary flex items-center gap-2 hover:scale-105 transition-transform duration-200"
       >
         <IoMdDownload className="h-6 w-6" />
         Résumé
