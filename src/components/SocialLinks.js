@@ -17,14 +17,14 @@ const SocialLinks = () => {
           <img
             src={isDarkTheme ? link.darkThemeIcon : link.icon}
             alt={`${link.name} icon`}
-            className="w-10 h-10 hover:scale-110 transition-transform duration-200"
+            className="w-10 h-10 hover:scale-110 transition-transform duration-100"
           />
         </a>
       ))}
       <a
         href="CV_UmairYousaf.pdf"
         download
-        className="btn btn-primary flex items-center gap-2 hover:scale-105 transition-transform duration-200"
+        className="btn btn-primary flex items-center gap-2 hover:scale-105 transition-transform duration-100"
       >
         <IoMdDownload className="h-6 w-6" />
         Résumé

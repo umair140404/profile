@@ -9,7 +9,7 @@ const PageLayout = ({ children }) => {
     <div className="bg-base-200 min-h-screen min-w-screen relative">
       <button
         onClick={toggleTheme}
-        className="btn btn-primary w-[50px] rounded-full fixed bottom-4 right-4 flex items-center justify-center p-2 shadow-md z-[9999] hover:scale-110 transition-transform duration-200"
+        className="btn btn-primary w-[50px] rounded-full fixed bottom-4 right-4 flex items-center justify-center p-2 shadow-md z-[9999] hover:scale-110 transition-transform duration-100"
       >
         {isDarkTheme ? (
           <FaMoon className="text-white" />

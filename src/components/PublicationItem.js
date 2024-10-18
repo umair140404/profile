@@ -17,7 +17,7 @@ const PublicationItem = ({ name, status, authors, abstract, links }) => {
         {links.map((linkItem, index) => (
           <div
             key={index}
-            className="btn btn-sm btn-primary hover:scale-105 transition-transform duration-200"
+            className="btn btn-sm btn-primary hover:scale-105 transition-transform duration-100"
           >
             <a href={linkItem.link} target="_blank" rel="noopener noreferrer">
               {linkItem.title}
