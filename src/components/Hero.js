@@ -19,9 +19,6 @@ const Hero = () => {
             Umair Yousaf
           </h1>
           <div className="space-y-4">
-            <h1 className="text-2xl lg:text-left text-center">
-              Independent Researcher
-            </h1>
             <div className="lg:text-left text-center">
               <div className="text-md">
                 <div className="inline-block">
