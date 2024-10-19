@@ -59,7 +59,7 @@ const Navbar = () => {
           <input
             type="checkbox"
             className="toggle"
-            defaultChecked
+            checked={!isDarkTheme ? true : false}
             onClick={toggleTheme}
           />
           <FaSun size={18} className={`text-yellow-500`} />
