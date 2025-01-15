@@ -7,6 +7,8 @@ const WorkExperienceItem = ({
   description,
   isStart,
   company,
+  location,
+  locationType,
   href,
 }) => {
   const { isDarkTheme } = useTheme();
@@ -40,6 +42,13 @@ const WorkExperienceItem = ({
               {company}
             </a>{" "}
             - {title}
+          </div>
+        )}
+        {location && locationType && (
+          <div className="flex flex-wrap space-x-2 font-semibold text-md italic">
+            <div className="">{location}</div>
+            <span className="">·</span>
+            <div className="">{locationType}</div>
           </div>
         )}
         <ul

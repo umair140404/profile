@@ -4,6 +4,8 @@ const teachingExperience = [
     title: "TA for the course Data Structures (CS 202)",
     company: "Lahore University of Management Sciences",
     href: "https://lums.edu.pk",
+    location: "Lahore, Pakistan",
+    locationType: "On-site",
     description: [
       "Managed a class of 100+ students alongside my Co-TAs",
       "Created and checked assignments & quizzes",

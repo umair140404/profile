@@ -26,10 +26,10 @@ const Home = () => {
       <HeadingAndContent title={"Research Interests"} id={"interests"}>
         <CardContainer cardData={interests} />
       </HeadingAndContent>
-      <HeadingAndContent title={"Preprints"} id={"preprints"}>
+      <HeadingAndContent title={"Current Projects"} id={"preprints"}>
         <PublicationList publications={publications} />
       </HeadingAndContent>
-      <HeadingAndContent title={"Projects"} id={"projects"}>
+      <HeadingAndContent title={"Past Projects"} id={"projects"}>
         <ProjectList projects={projects} />
       </HeadingAndContent>
       <HeadingAndContent title={"Education"} id={"education"}>

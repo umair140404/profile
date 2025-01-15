@@ -10,14 +10,23 @@ const about = (
       >
         Lahore University of Management Sciences (LUMS)
       </a>
-      . I currently work as a Junior Consultant in the AI department at{" "}
+      . I currently work as a Junior Consultant at{" "}
       <a
         className="link link-primary link-hover"
-        href={"https://systemsltd.com"}
+        href={"https://reteta.com"}
         target="_blank"
         rel="noopener noreferrer"
       >
-        Systems Limited
+        Reteta
+      </a>
+      , a startup of{" "}
+      <a
+        className="link link-primary link-hover"
+        href={"https://www.visionet.com"}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Visionet
       </a>
       . In my role, I leverage my expertise in Generative AI, NLP, Computer
       Vision and Deep Learning to tackle complex challenges.
