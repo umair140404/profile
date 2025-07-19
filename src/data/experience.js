@@ -1,7 +1,7 @@
 const experience = [
   { year: "Present" },
   {
-    year: "Nov. 2024",
+    year: "Nov. 2024 - Jul. 2025",
     title: "Junior Consultant - AI",
     company: "Reteta",
     href: "https://reteta.com",
