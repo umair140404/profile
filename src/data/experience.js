@@ -8,10 +8,11 @@ const experience = [
     location: "Cranbury, New Jersey, USA",
     locationType: "Remote",
     description: [
-      "Developed a robust PII & PHI anonymization pipeline via Named Entity Recognition models",
-      "Finetuned several models of various sizes for SOAP note generation from patient-doctor conversions.",
-      "Led an extensive data preprocessing task for model training.",
-      "Explored ASR and Diarization techniques.",
+      "Designed and implemented methods to generate accurate and structured SOAP notes from encrypted patient-doctor interactions via LLMs.",
+      "Achieved model performance competitive with state-of-the-art (SOTA) systems in the medical NLP domain, enhancing the product’s standing in a competitive healthcare AI market.",
+      "Deployed and maintained the complete ML backend on Azure using Azure Machine Learning and Azure Container Instances, enabling scalable and secure model inference.",
+      "Developed NER-based techniques to anonymize Personally Identifiable Information (PII) in patient-doctor conversations, ensuring compliance with HIPAA.",
+      "Built and managed CI/CD pipelines on Azure DevOps for automated testing, deployment, and monitoring of models.",
     ],
   },
   {

@@ -23,28 +23,12 @@ const Hero = () => {
               <div className="text-md">
                 <div className="inline-block">
                   <a
-                    href="mailto:23100053@lums.edu.pk"
+                    href="mailto:umair.yousaf@colorado.edu"
                     className="link link-primary link-hover"
                   >
-                    23100053@lums.edu.pk
-                  </a>{" "}
-                  <strong
-                    className={`inline-block ${
-                      isDarkTheme ? "text-red-500" : "text-red-600"
-                    }`}
-                  >
-                    (primary)
-                  </strong>
+                    umair.yousaf@colorado.edu
+                  </a>
                 </div>
-              </div>
-
-              <div className="text-md">
-                <a
-                  href="mailto:umair2000yousaf@gmail.com"
-                  className="link link-primary link-hover"
-                >
-                  umair2000yousaf@gmail.com
-                </a>
               </div>
             </div>
           </div>
