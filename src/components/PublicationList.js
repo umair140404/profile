@@ -3,7 +3,7 @@ import PublicationItem from "./PublicationItem";
 
 const PublicationList = ({ publications }) => {
   return (
-    <div>
+    <div className="space-y-4">
       {publications.map((pub, index) => (
         <PublicationItem key={index} {...pub} />
       ))}

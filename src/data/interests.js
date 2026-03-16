@@ -1,41 +1,38 @@
 const interests = [
   <div>
-    <h1 className="text-lg font-semibold">
-      Multimodal LLMs & Domain Adaptability
-    </h1>
+    <h1 className="text-lg font-semibold">AI for Collaborative Learning</h1>
     <p>
-      Examining how multimodal LLMs can draw inferences from limited visual cues
-      and effectively generalize across diverse domains.
+      Studying how AI systems can support group learning activities by guiding
+      student discussions, providing contextual feedback, and improving
+      engagement in classroom environments.
     </p>
   </div>,
 
   <div>
     <h1 className="text-lg font-semibold">
-      Agentic NLP Systems for Task Evaluation and Completion
+      Multimodal AI and Conversational Interfaces
     </h1>
     <p>
-      Creating LLM-based NLP frameworks that emulate human reasoning for
-      efficient task understanding & resolution.
+      Exploring systems that combine speech, text, and external knowledge
+      sources to enable context-aware AI assistants and more natural human–AI
+      interaction.
     </p>
   </div>,
 
   <div>
-    <h1 className="text-lg font-semibold">
-      Synthetic Dataset Creation and Augmentation for Constrained Environments
-    </h1>
+    <h1 className="text-lg font-semibold">Robotics and Embodied AI</h1>
     <p>
-      Developing methods for generating diverse synthetic datasets to train
-      models in resource-limited contexts.
+      Building perception pipelines for robots using RGB-D sensing, 3D
+      reconstruction, and object localization to enable safe manipulation and
+      interaction in real-world environments.
     </p>
   </div>,
 
   <div>
-    <h1 className="text-lg font-semibold">
-      Ethical Considerations in AI and NLP
-    </h1>
+    <h1 className="text-lg font-semibold">Evaluation of LLM-Based Systems</h1>
     <p>
-      Examining fairness and bias mitigation in NLP applications, as well as
-      ensuring the responsible handling of PII to promote user safety.
+      Developing experimental methodologies and benchmarks to evaluate LLM
+      performance, reliability, and usefulness in real-world applications.
     </p>
   </div>,
 ];

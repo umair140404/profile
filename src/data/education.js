@@ -6,7 +6,7 @@ const education = [
     startDate: "2025",
     endDate: "Ongoing",
     description:
-      "",
+      "Courses taken: Intro to Robotics, Transformers for Robotics, Neuro-Symbolic NLP, Distributed Systems, Linear Programming",
   },
   {
     title: "Bachelor of Science - Computer Science",

@@ -1,16 +1,39 @@
 const about = (
   <div>
     <p>
-      I am an AI specialist with a BS in Computer Science from the{" "}
+      I am an AI researcher and engineer currently pursuing an MS in Computer
+      Science at the{" "}
       <a
         className="link link-primary link-hover"
-        href={"https://lums.edu.pk"}
+        href={"https://www.colorado.edu"}
         target="_blank"
         rel="noopener noreferrer"
       >
-        Lahore University of Management Sciences (LUMS)
+        University of Colorado Boulder
       </a>
-      . I currently work as a Junior Consultant at{" "}
+      . I work as a Graduate Student Researcher at the{" "}
+      <a
+        className="link link-primary link-hover"
+        href={"https://www.colorado.edu/research/ai-institute/"}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        NSF AI Institute for Student-AI Teaming (iSAT)
+      </a>
+      , where I research AI systems that support collaborative learning in
+      classrooms.
+    </p>
+
+    <p className="mt-4">
+      My work focuses on large language models, retrieval-augmented generation
+      (RAG), and multimodal AI systems. I develop and evaluate AI assistants
+      that combine document retrieval, conversational reasoning, and real-time
+      speech transcripts to guide student group activities and support
+      interactive learning environments.
+    </p>
+
+    <p className="mt-4">
+      I previously worked as a Junior AI Consultant at{" "}
       <a
         className="link link-primary link-hover"
         href={"https://reteta.com"}
@@ -18,24 +41,18 @@ const about = (
         rel="noopener noreferrer"
       >
         Reteta
-      </a>
-      , a startup of{" "}
+      </a>{" "}
+      and{" "}
       <a
         className="link link-primary link-hover"
         href={"https://www.visionet.com"}
         target="_blank"
         rel="noopener noreferrer"
       >
-        Visionet
+        Visionet Systems
       </a>
-      . In my role, I leverage my expertise in Generative AI, NLP, Computer
-      Vision and Deep Learning to tackle complex challenges.
-    </p>
-    <p className="mt-4">
-      As an independent researcher, I am deeply passionate about exploring
-      advanced AI methodologies, particularly in multimodal LLMs and agentic NLP
-      systems. I am interested in the practical implementation of these systems
-      and their real-world benefits.
+      , where I built large-scale NLP, computer vision, and generative AI
+      systems for healthcare, insurance, and enterprise applications.
     </p>
   </div>
 );

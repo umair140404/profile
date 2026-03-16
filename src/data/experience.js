@@ -1,6 +1,21 @@
 const experience = [
   { year: "Present" },
   {
+    year: "Feb. 2026",
+    title: "Graduate Student Researcher",
+    company: "NSF AI Institute for Student-AI Teaming (iSAT)",
+    href: "https://www.colorado.edu/research/ai-institute/",
+    location: "Boulder, Colorado, USA",
+    locationType: "On-site",
+    description: [
+      "Researching AI-assisted collaborative learning systems designed to support student group activities in classroom environments.",
+      "Developing and evaluating retrieval-augmented generation (RAG) pipelines including document chunking, embedding generation, and vector database indexing.",
+      "Investigating retrieval strategies such as semantic search, hybrid retrieval, and MMR along with reranking techniques to improve response relevance and grounding.",
+      "Integrating large language models with real-time speech transcripts generated via Whisper to enable context-aware AI interaction during student collaboration.",
+      "Conducting experimental evaluation and iterative improvement of AI assistants intended for real-world educational deployment.",
+    ],
+  },
+  {
     year: "Nov. 2024 - Jul. 2025",
     title: "Junior Consultant - AI",
     company: "Reteta",
