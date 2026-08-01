@@ -1,0 +1,17 @@
+- title: Master of Science - Computer Science
+  institution: University of Colorado Boulder
+  location: Boulder, Colorado
+  startDate: "2025"
+  endDate: Ongoing
+  gpa: "4.0 / 4.0"
+  description: >
+    Research-based MS track. Courses: Intro to Robotics, Transformers for
+    Robotics, Neuro-Symbolic NLP, Distributed Systems, Linear Programming.
+- title: Bachelor of Science - Computer Science
+  institution: Lahore University of Management Sciences (LUMS)
+  location: Lahore, Pakistan
+  startDate: "2019"
+  endDate: "2023"
+  gpa: "3.6 / 4.0"
+  description: >
+    Focused on natural language processing, deep learning, and computer vision.

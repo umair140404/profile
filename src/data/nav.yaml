@@ -1,0 +1,11 @@
+# Top-level navigation tabs. `path` maps to a route in the app.
+- heading: Home
+  path: /
+- heading: Research
+  path: /research
+- heading: Experience
+  path: /experience
+- heading: Projects
+  path: /projects
+- heading: Life
+  path: /life

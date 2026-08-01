@@ -1,6 +1,8 @@
-import socials from "../data/socials";
+import socials from "../data/socials.yaml";
+import profile from "../data/profile.yaml";
 import { IoMdDownload } from "react-icons/io";
 import { useTheme } from "./ThemeContext";
+import assetUrl from "../utils/asset";
 
 const SocialLinks = () => {
   const { isDarkTheme } = useTheme();
@@ -13,20 +15,21 @@ const SocialLinks = () => {
           target="_blank"
           rel="noopener noreferrer"
           key={link.name}
+          aria-label={link.name}
         >
           <img
-            src={isDarkTheme ? link.darkThemeIcon : link.icon}
+            src={assetUrl(isDarkTheme ? link.darkThemeIcon : link.icon)}
             alt={`${link.name} icon`}
-            className="w-10 h-10 hover:scale-110 transition-transform duration-100"
+            className="w-9 h-9 hover:scale-110 transition-transform duration-100"
           />
         </a>
       ))}
       <a
-        href="Resume_UmairYousaf.pdf"
+        href={assetUrl(profile.resume)}
         download
-        className="btn btn-primary flex items-center gap-2 hover:scale-105 transition-transform duration-100"
+        className="btn btn-primary btn-sm flex items-center gap-2 hover:scale-105 transition-transform duration-100"
       >
-        <IoMdDownload className="h-6 w-6" />
+        <IoMdDownload className="h-5 w-5" />
         Résumé
       </a>
     </div>

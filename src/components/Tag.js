@@ -1,9 +1,8 @@
 const Tag = ({ item }) => {
-  
   return (
-    <div className="border border-primary rounded-lg p-2 cursor-default">
-      <span className="text-md">{item}</span>
-    </div>
+    <span className="inline-block border border-primary/40 bg-primary/5 text-primary rounded-full px-3 py-1 text-sm cursor-default">
+      {item}
+    </span>
   );
 };
 

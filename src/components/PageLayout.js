@@ -1,11 +1,15 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const PageLayout = ({ children }) => {
   return (
-    <div className="bg-base-200 min-h-screen min-w-screen relative">
+    <div className="bg-base-200 min-h-screen flex flex-col">
       <Navbar />
-      <div className="py-[20%] lg:py-[7%] lg:mx-[15%] mx-[5%]">{children}</div>
+      <main className="flex-1 w-full max-w-5xl mx-auto px-5 lg:px-8 pt-28 pb-16">
+        {children}
+      </main>
+      <Footer />
     </div>
   );
 };

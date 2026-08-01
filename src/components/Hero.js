@@ -1,40 +1,55 @@
 import SocialLinks from "./SocialLinks";
-import { useTheme } from "./ThemeContext";
+import profile from "../data/profile.yaml";
+import assetUrl from "../utils/asset";
 
 const Hero = () => {
-  const { isDarkTheme } = useTheme();
-
   return (
-    <div className="hero bg-base-100 p-6 rounded-lg">
-      <div className="flex flex-col items-center justify-center w-full lg:flex-row-reverse">
-        <div className="lg:w-1/3 flex flex-col items-center lg:items-end">
+    <div className="card bg-base-100 border border-base-content/10 shadow-sm rounded-2xl p-6 lg:p-10">
+      <div className="flex flex-col items-center gap-8 lg:flex-row-reverse lg:items-center lg:justify-between">
+        <div className="lg:w-1/3 flex justify-center lg:justify-end">
           <img
-            src="profile-pic.jpg"
-            className="w-[250px] h-[250px] rounded-full"
-            alt="Profile"
+            src={assetUrl(profile.photo)}
+            className="w-[220px] h-[220px] lg:w-[250px] lg:h-[250px] rounded-full object-cover ring-4 ring-primary/20"
+            alt={profile.name}
           />
         </div>
-        <div className="lg:w-2/3 space-y-8 lg:mt-0 mt-8">
-          <h1 className="lg:text-5xl lg:text-left text-4xl text-center font-bold">
-            Umair Yousaf
-          </h1>
-          <div className="space-y-4">
-            <div className="lg:text-left text-center">
-              <div className="text-md">
-                <div className="inline-block">
+        <div className="lg:w-2/3 space-y-5 text-center lg:text-left">
+          <div className="space-y-2">
+            <h1 className="font-serif text-4xl lg:text-5xl font-bold tracking-tight">
+              {profile.name}
+            </h1>
+            <p className="text-lg text-primary font-medium">{profile.tagline}</p>
+          </div>
+
+          {profile.affiliations && (
+            <ul className="flex flex-wrap gap-x-6 gap-y-1 justify-center lg:justify-start text-sm text-base-content/70">
+              {profile.affiliations.map((a) => (
+                <li key={a.label}>
                   <a
-                    href="mailto:umair.yousaf@colorado.edu"
-                    className="link link-primary link-hover"
+                    href={a.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold link link-hover text-base-content"
                   >
-                    umair.yousaf@colorado.edu
+                    {a.label}
                   </a>
-                </div>
-              </div>
-            </div>
+                  {a.detail && <span className="text-base-content/50"> · {a.detail}</span>}
+                </li>
+              ))}
+            </ul>
+          )}
+
+          <div className="text-md">
+            <a
+              href={`mailto:${profile.email}`}
+              className="link link-primary link-hover"
+            >
+              {profile.email}
+            </a>
+            <span className="text-base-content/50"> · {profile.location}</span>
           </div>
-          <div>
-            <SocialLinks />
-          </div>
+
+          <SocialLinks />
         </div>
       </div>
     </div>

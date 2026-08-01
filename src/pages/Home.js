@@ -1,55 +1,34 @@
+import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
-import about from "../data/about";
-import EducationCardContainer from "../components/EducationCardContainer";
-import HeadingAndContent from "../components/HeadingAndContent";
-import WorkExperienceTimeline from "../components/WorkExperienceTimeline";
-import education from "../data/education";
-import experience from "../data/experience";
-import teachingExperience from "../data/teachingExperience";
-import projects from "../data/projects";
-import ProjectList from "../components/ProjectList";
-import publications from "../data/publications";
-import PublicationList from "../components/PublicationList";
-import TagList from "../components/TagList";
-import interests from "../data/interests";
-import coursesTaken from "../data/coursesTaken";
-import honorsAndAwards from "../data/awards";
+import Section from "../components/Section";
+import Markdown from "../components/Markdown";
 import CardContainer from "../components/CardContainer";
+import profile from "../data/profile.yaml";
+import interests from "../data/interests.yaml";
 
 const Home = () => {
   return (
-    <div className="space-y-12">
+    <div className="space-y-14">
       <Hero />
-      <HeadingAndContent title={"About Me"} id={"about"}>
-        <div className="text-md md:text-lg">{about}</div>
-      </HeadingAndContent>
-      <HeadingAndContent title={"Research Interests"} id={"interests"}>
+
+      <Section title="About Me">
+        <Markdown className="text-md md:text-lg text-base-content/85">
+          {profile.bio}
+        </Markdown>
+      </Section>
+
+      <Section title="Research Interests">
         <CardContainer cardData={interests} />
-      </HeadingAndContent>
-      <HeadingAndContent title={"Current Projects"} id={"preprints"}>
-        <PublicationList publications={publications} />
-      </HeadingAndContent>
-      <HeadingAndContent title={"Past Projects"} id={"projects"}>
-        <ProjectList projects={projects} />
-      </HeadingAndContent>
-      <HeadingAndContent title={"Education"} id={"education"}>
-        <EducationCardContainer cardData={education} />
-      </HeadingAndContent>
-      <HeadingAndContent title={"Teaching Experience"} id={"experience"}>
-        {<WorkExperienceTimeline experience={teachingExperience} />}
-      </HeadingAndContent>
-      <HeadingAndContent title={"Work Experience"}>
-        {<WorkExperienceTimeline experience={experience} />}
-      </HeadingAndContent>
-      <HeadingAndContent
-        title={"Relevant Courses Taken During BS"}
-        id={"courses"}
-      >
-        <TagList itemList={coursesTaken} />
-      </HeadingAndContent>
-      <HeadingAndContent title={"Honors & Awards"} id={"honors"}>
-        <CardContainer cardData={honorsAndAwards} />
-      </HeadingAndContent>
+      </Section>
+
+      <div className="flex flex-wrap gap-3 pt-2">
+        <Link to="/research" className="btn btn-primary">
+          View current research
+        </Link>
+        <Link to="/experience" className="btn btn-outline">
+          Experience & education
+        </Link>
+      </div>
     </div>
   );
 };

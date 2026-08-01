@@ -1,30 +1,54 @@
 import React from "react";
+import Tag from "./Tag";
 
-const PublicationItem = ({ name, status, authors, abstract, links }) => {
+const PublicationItem = ({
+  name,
+  org,
+  status,
+  tags,
+  description,
+  collaborators,
+  links,
+}) => {
   return (
-    <div className="bg-base-300 rounded-lg p-4">
-      <h2 className="text-xl font-bold">{name}</h2>
-      <p className="italic">{status}</p>
-      {/* <p>
-        Authors: <strong>Umair Yousaf</strong>{authors}
-      </p> */}
-      <p className="my-4 italic">
-        <strong>Details: </strong>
-        {abstract}
-      </p>
+    <div className="bg-base-100 border border-base-content/10 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-primary/30 transition-all">
+      <h2 className="text-xl font-bold font-serif">{name}</h2>
+      {org && <p className="text-primary font-medium mt-1">{org}</p>}
+      {status && (
+        <p className="text-sm text-base-content/60 italic mt-1">{status}</p>
+      )}
 
-      <div className="flex flex-wrap gap-2">
-        {links.map((linkItem, index) => (
-          <div
-            key={index}
-            className="btn btn-sm btn-primary hover:scale-105 transition-transform duration-100"
-          >
-            <a href={linkItem.link} target="_blank" rel="noopener noreferrer">
+      <p className="my-4 leading-relaxed text-base-content/85">{description}</p>
+
+      {collaborators && (
+        <p className="text-sm text-base-content/60 mb-4">
+          <span className="font-semibold">Collaborators:</span> {collaborators}
+        </p>
+      )}
+
+      {tags && tags.length > 0 && (
+        <div className="flex flex-wrap gap-2 mb-4">
+          {tags.map((t) => (
+            <Tag key={t} item={t} />
+          ))}
+        </div>
+      )}
+
+      {links && links.length > 0 && (
+        <div className="flex flex-wrap gap-2">
+          {links.map((linkItem, index) => (
+            <a
+              key={index}
+              href={linkItem.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-sm btn-primary btn-outline hover:scale-105 transition-transform duration-100"
+            >
               {linkItem.title}
             </a>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

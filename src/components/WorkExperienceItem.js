@@ -15,8 +15,8 @@ const WorkExperienceItem = ({
 
   return (
     <li>
-      <hr className={isDarkTheme ? "bg-gray-400" : ""} />
-      <div className={`timeline-middle`}>
+      <hr className={isDarkTheme ? "bg-gray-500" : ""} />
+      <div className="timeline-middle text-primary">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
@@ -28,11 +28,11 @@ const WorkExperienceItem = ({
       </div>
       <div
         style={{ marginBottom: "3rem" }}
-        className={`${isStart ? "timeline-start" : "timeline-end"}`}
+        className={isStart ? "timeline-start" : "timeline-end"}
       >
-        <time className="font-mono italic">{year}</time>
+        <time className="font-mono text-sm text-base-content/60">{year}</time>
         {company && (
-          <div className="text-lg">
+          <div className="text-lg mt-0.5">
             <a
               className="font-bold link link-primary link-hover"
               target="_blank"
@@ -41,31 +41,29 @@ const WorkExperienceItem = ({
             >
               {company}
             </a>{" "}
-            - {title}
+            <span className="text-base-content/80">- {title}</span>
           </div>
         )}
         {location && locationType && (
-          <div className="flex flex-wrap space-x-2 font-semibold text-md italic">
-            <div className="">{location}</div>
-            <span className="">·</span>
-            <div className="">{locationType}</div>
+          <div className="flex flex-wrap gap-x-2 text-sm italic text-base-content/60">
+            <span>{location}</span>
+            <span>·</span>
+            <span>{locationType}</span>
           </div>
         )}
         <ul
-          className="md:max-w-[45vw]"
+          className="mt-2 text-base-content/85"
           style={{ listStyleType: "disc", paddingLeft: "20px" }}
         >
           {description !== undefined &&
-            description.map((exp, index) => {
-              return (
-                <li className="mb-1" key={index}>
-                  {exp}
-                </li>
-              );
-            })}
+            description.map((exp, index) => (
+              <li className="mb-1" key={index}>
+                {exp}
+              </li>
+            ))}
         </ul>
       </div>
-      <hr className={isDarkTheme ? "bg-gray-400" : ""} />
+      <hr className={isDarkTheme ? "bg-gray-500" : ""} />
     </li>
   );
 };

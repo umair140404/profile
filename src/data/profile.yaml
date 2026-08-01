@@ -1,0 +1,39 @@
+name: Umair Yousaf
+tagline: MS Computer Science · Robotics & AI Researcher
+email: umair.yousaf@colorado.edu
+location: Boulder, Colorado
+resume: Resume_UmairYousaf.pdf
+photo: profile-pic.jpg
+
+# Short affiliations shown under the name on the home page.
+affiliations:
+  - label: HIRO Group
+    detail: CU Boulder · Prof. Alessandro Roncone
+    url: https://hiro-group.ronc.one
+  - label: iSAT (NSF AI Institute)
+    detail: Graduate Researcher
+    url: https://www.colorado.edu/research/ai-institute/
+
+# Bio is Markdown so it is easy to edit. Inline links are supported.
+bio: >
+  I am a first-year MS Computer Science student at the
+  [University of Colorado Boulder](https://www.colorado.edu), on the
+  research-based MS track. I am a member of the
+  [HIRO Group](https://hiro-group.ronc.one) under Professor
+  Alessandro Roncone, and I work as a Graduate Researcher at the
+  [NSF AI Institute for Student-AI Teaming (iSAT)](https://www.colorado.edu/research/ai-institute/),
+  advised by Peter Foltz.
+
+
+  My research spans **robotics and embodied AI** - perception, manipulation, and
+  imitation learning - as well as **AI for collaborative learning**, where I
+  build and evaluate LLM-based systems that support group learning in
+  classrooms. My work draws on large language models, retrieval-augmented
+  generation (RAG), and multimodal systems that combine speech, text, and
+  retrieval for context-aware assistants.
+
+
+  I earned my BS in Computer Science from the
+  [Lahore University of Management Sciences (LUMS)](https://lums.edu.pk) in
+  Pakistan, with a focus on NLP, deep learning, and computer vision. My
+  long-term goal is a **PhD in robotics**, followed by R&D work in the field.

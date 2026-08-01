@@ -1,0 +1,88 @@
+- year: Feb. 2026 – Present
+  title: Graduate Student Researcher
+  company: NSF AI Institute for Student-AI Teaming (iSAT)
+  href: https://www.colorado.edu/research/ai-institute/
+  location: Boulder, Colorado, USA
+  locationType: On-site
+  description:
+    - Researching AI-assisted collaborative learning systems designed to support student group activities in classroom environments.
+    - Developing and evaluating retrieval-augmented generation (RAG) pipelines including document chunking, embedding generation, and vector database indexing.
+    - Investigating retrieval strategies such as semantic search, hybrid retrieval, and MMR along with reranking techniques to improve response relevance and grounding.
+    - Integrating large language models with real-time speech transcripts generated via Whisper to enable context-aware AI interaction during student collaboration.
+    - Conducting experimental evaluation and iterative improvement of AI assistants intended for real-world educational deployment.
+
+- year: Sep. 2025 – Present
+  title: Graduate Student Researcher
+  company: HIRO Group, University of Colorado Boulder
+  href: https://hiro-group.ronc.one
+  location: Boulder, Colorado, USA
+  locationType: On-site
+  description:
+    - Developing real-time RGB-D perception pipelines for tabletop object detection, localization, and collision-aware manipulation using ROS2 and NVBlox volumetric fusion.
+    - Processing 3D point-cloud data for scene understanding and object modeling.
+    - Applying 2D/3D correspondences and volumetric mapping for object tracking, manipulation, and planning.
+    - Integrating multimodal sensor data for AI-assisted collaborative robotics research, including the NASA / CU Boulder dual-arm "Phoebe" project.
+
+- year: Nov. 2024 – Jul. 2025
+  title: Junior Consultant - AI
+  company: Reteta
+  href: https://reteta.com
+  location: Cranbury, New Jersey, USA
+  locationType: Remote
+  description:
+    - Designed and implemented methods to generate accurate and structured SOAP notes from encrypted patient-doctor interactions via LLMs.
+    - Achieved model performance competitive with state-of-the-art systems in the medical NLP domain, enhancing the product's standing in a competitive healthcare AI market.
+    - Deployed and maintained the complete ML backend on Azure using Azure Machine Learning and Azure Container Instances, enabling scalable and secure model inference.
+    - Developed NER-based techniques to anonymize Personally Identifiable Information (PII) in patient-doctor conversations, ensuring compliance with HIPAA.
+    - Built and managed CI/CD pipelines on Azure DevOps for automated testing, deployment, and monitoring of models.
+
+- year: Jul. 2024
+  title: Junior Consultant - AI
+  company: Systems Limited
+  href: https://systemsltd.com
+  location: Lahore, Pakistan
+  locationType: On-site
+  description:
+    - Developed a comprehensive PDF parsing pipeline capable of handling regular text, headings, subheadings, paragraphs, tables, images, and formulas, utilizing publicly available SOTA models.
+    - Integrated the pipeline with existing RAG architectures, resulting in significant enhancements in information retrieval and document querying.
+    - Developed a clothing recommendation system utilizing transformer models and re-ranking techniques.
+    - Deployed models on Azure Container Instances (ACI).
+    - Conducted multiple live client demonstrations of our solutions.
+
+- year: Jul. 2023
+  title: Associate Consultant - AI
+  company: Systems Limited
+  href: https://systemsltd.com
+  location: Lahore, Pakistan
+  locationType: On-site
+  description:
+    - Developed a suite of Generative AI solutions for the insurance industry.
+    - Created multimodal LLM-based pipelines for VQA and image-based information extraction, outperforming in-house OCR methods.
+    - Implemented multiple end-to-end RAG pipelines using LangChain and LangGraph.
+    - Designed and trained a reverse image search module for clothing articles using Siamese Networks with contrastive loss and various data augmentation techniques.
+    - Gained extensive experience with React, Flask, and MongoDB.
+
+- year: Jun. 2022 – Aug. 2022
+  title: ML & SE Intern
+  company: Aletheia-AI (rebranded to BRICKandMORTAR.ai)
+  href: https://www.linkedin.com/company/brickandmortar-ai/posts/?feedView=all
+  location: Lahore, Pakistan
+  locationType: On-site
+  description:
+    - Developed pipelines for multi-class vehicle detection and number plate detection using YOLOv5.
+    - Implemented systems for person detection and facial recognition with YOLOv5.
+    - Conducted dataset creation, annotation, validation, and experimentation.
+    - Performed dataset augmentation by adapting models to new geographic contexts, replacing localized features to address client requirements.
+    - Deployed deep learning models for object detection and recognition tasks.
+    - Created a real-time monitoring dashboard utilizing React.js and Material UI.
+
+- year: Jun. 2021 – Jul. 2021
+  title: SE Intern
+  company: Wateen Telecom
+  href: https://wateen.com/
+  location: Islamabad, Pakistan
+  locationType: On-site
+  description:
+    - Conversion of High-Level Design (HLD) into software using Python programming.
+    - Simulation of Link Budget Analysis in Python.
+    - "Understanding of transport layer technologies: SDH, OTN, DWDM."

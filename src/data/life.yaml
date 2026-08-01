@@ -1,0 +1,28 @@
+# The "Life" page - candid, outside-the-lab stuff.
+#
+# How to add a card:
+#   1. Drop your photo into  public/gallery/  (e.g. public/gallery/hiking.jpg)
+#   2. Add an item below with the image path (relative to public/) and a caption.
+#   3. `alt` is optional (used by screen readers); if omitted the caption is used.
+#
+# The `intro` line supports Markdown and shows above the photos. Delete it if
+# you don't want an intro.
+
+intro: >
+  A few snapshots from life outside work.
+
+photos:
+  - image: gallery/moon.jpeg
+    caption: "Craters on the moon (Nikon Coolpix P900, 1428mm, ƒ/6.5)"
+  - image: gallery/scubadiving.jpeg
+    caption: "Scubadiving"
+  - image: gallery/chaman_tunnels.jpeg
+    caption: "Disused train tunnels in Chaman, Pakistan"
+  - image: gallery/skydiving.jpeg
+    caption: "Skydiving over the Palm Jumeirah"
+  - image: gallery/cu_flatirons.jpeg
+    caption: "CU as seen from the Flatirons"
+  - image: gallery/mtb_nederland.jpeg
+    caption: "Mounting biking in Nederland, CO"
+  - image: gallery/camping.jpeg
+    caption: "Camping in a nice clearing"
