@@ -12,7 +12,7 @@ const EducationCard = ({ cardItem }) => {
         <div className="shrink-0 lg:text-right">
           {cardItem.startDate && cardItem.endDate && (
             <p className="font-mono text-sm text-base-content/60">
-              {cardItem.startDate} – {cardItem.endDate}
+              {cardItem.startDate} - {cardItem.endDate}
             </p>
           )}
           {cardItem.gpa && (

@@ -1,42 +1,50 @@
 - name: Force-Constrained Motion Primitives for Dual-Arm Manipulation
   org: NASA · CU Boulder · PickNik Robotics
   status: Active - paper targeted for September 2026
-  tags: [Imitation Learning, MoveIt Pro, UR5e, MuJoCo, Manipulation]
+  tags: [SAM 3, NVBlox, CERG, UR5e, Clearpath Ridgeback, Manipulation]
   description: >
     A collaborative project between NASA and CU Boulder, physically hosted at
-    PickNik Robotics, developing force-constrained motion primitives for a
-    dual-arm UR5e platform (nicknamed "Phoebe") mounted on a Clearpath
-    Ridgeback. The research direction centers on sanding via imitation learning.
-    Work so far includes setting up the project repository, building out MoveIt
-    Pro Docker environments, enabling joint-level torque/effort control on the
-    UR5e arms, CERG deployment and PD gain tuning in MuJoCo simulation, and
-    dual-arm joint goal commanding.
+    PickNik Robotics, developing force-constrained manipulation for a dual-arm
+    UR5e platform (nicknamed "Phoebe") mounted on a Clearpath Ridgeback, with the
+    goal of crew-safe robotic assistance on lunar space stations. I built a
+    real-time perception pipeline on Intel RealSense RGB-D input that combines
+    SAM 3 instance segmentation with NVBlox volumetric 3D reconstruction,
+    deriving per-object surface normals to compute perpendicular approach poses
+    for contact-rich interaction. On the control side, I deployed the Compliant
+    Explicit Reference Governor (CERG) to enforce bounded interaction forces
+    during robot-environment contact, tuned PD gains, validated dual-arm
+    joint-goal commanding, and enabled joint-level torque/effort control on the
+    UR5e arms (ur_robot_driver, RTDE recipes, xacro hardware interfaces).
   collaborators: Gilberto Briscoe-Martinez, Yaashia Gautam
   links: []
 
 - name: SparkAgent / SPARK - AI Classroom Discourse Monitoring
   org: iSAT · NSF AI Institute for Student-AI Teaming
   status: Active
-  tags: [LLaMA 3.3 70B, RAG, Whisper, AWS, Docker]
+  tags: [LLaMA 3.3 70B, Neuro-Symbolic NLP, Qdrant, Whisper, SileroVAD, RAG]
   description: >
     An AI system that monitors classroom discourse in real time to support
-    collaborative student learning. Built on LLaMA 3.3 70B with
-    retrieval-augmented generation (RAG) and Whisper for real-time speech
-    transcription. I built and iterated on a suite of LLM prompt templates
-    (discourse monitor, chat router, summarizer, RAG, rephrase, and
-    acknowledgment wrapper), a Mermaid-based flowchart trace system for
-    debugging agent behavior, and backend logic for surfacing insights to
-    teachers via sticky-note highlighting. The system uses AWS integration and
-    Docker-based deployment.
+    collaborative student learning, applying neuro-symbolic NLP with LLaMA 3.3
+    70B for real-time utterance classification and dialogue management. I built a
+    similarity-based dialogue router using cosine embeddings to classify and
+    route student utterances (reducing LLM misclassification) and migrated the
+    vector store from ChromaDB to Qdrant for better retrieval. Real-time speech
+    detection uses Whisper and SileroVAD for noisy classrooms. I also built a
+    suite of LLM prompt templates (discourse monitor, chat router, summarizer,
+    RAG, rephrase, and acknowledgment wrapper), a Mermaid-based flowchart trace
+    system for debugging agent behavior, and backend logic for surfacing insights
+    to teachers via sticky-note highlighting. Deployed with Docker and evaluated
+    across live K-12 classroom pilots.
+  collaborators: Chelsea Chandler, Peter Foltz, Sidney D'Mello, Leanne Hirshfield
   links: []
 
-- name: "LEGAL-UQA: Low-Resource Urdu–English Legal Question Answering"
+- name: "LEGAL-UQA: Low-Resource Urdu-English Legal Question Answering"
   org: NLP Research
   status: Exploring the publication landscape
   tags: [NLP, Low-Resource, RAG, Evaluation, mt5-large]
   description: >
     The first Urdu legal question-answering dataset derived from Pakistan's
-    constitution - a parallel English–Urdu dataset of 619 question-answer pairs,
+    constitution - a parallel English-Urdu dataset of 619 question-answer pairs,
     each paired with its corresponding legal article context. It addresses the
     lack of domain-specific NLP resources for low-resource languages like Urdu.
     Dataset creation involved OCR extraction, manual refinement, and
@@ -45,6 +53,7 @@
     human-evaluated accuracy), fine-tuned mt5-large-UQA-1.0, and compared
     retrieval performance across embedding models (OpenAI's
     text-embedding-3-large outperformed Mistral's mistral-embed).
+  collaborators: Faizan Faisal
   links:
     - title: arXiv
       link: https://arxiv.org/abs/2410.13013

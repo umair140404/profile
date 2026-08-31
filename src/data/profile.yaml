@@ -1,5 +1,5 @@
 name: Umair Yousaf
-tagline: MS Computer Science · Robotics & AI Researcher
+tagline: MS Computer Science, CU Boulder
 email: umair.yousaf@colorado.edu
 location: Boulder, Colorado
 resume: Resume_UmairYousaf.pdf
@@ -16,9 +16,8 @@ affiliations:
 
 # Bio is Markdown so it is easy to edit. Inline links are supported.
 bio: >
-  I am a first-year MS Computer Science student at the
-  [University of Colorado Boulder](https://www.colorado.edu), on the
-  research-based MS track. I am a member of the
+  I am a second-year MS Computer Science student at the
+  [University of Colorado Boulder](https://www.colorado.edu). I am a member of the
   [HIRO Group](https://hiro-group.ronc.one) under Professor
   Alessandro Roncone, and I work as a Graduate Researcher at the
   [NSF AI Institute for Student-AI Teaming (iSAT)](https://www.colorado.edu/research/ai-institute/),
