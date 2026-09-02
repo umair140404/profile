@@ -11,7 +11,7 @@ All site content lives in easy-to-edit **YAML** files under [`src/data/`](src/da
 
 | File | Controls |
 | --- | --- |
-| `profile.yaml` | Name, tagline, email, location, résumé, photo, affiliations, and the About Me bio (Markdown). |
+| `profile.yaml` | Name, tagline, email, résumé, photo, affiliations, and the About Me bio (Markdown). |
 | `nav.yaml` | The navbar tabs and their routes. |
 | `interests.yaml` | Research Interests cards (Home page). |
 | `currentProjects.yaml` | The Research page cards (name, org, status, tags, description, links). |
@@ -21,7 +21,7 @@ All site content lives in easy-to-edit **YAML** files under [`src/data/`](src/da
 | `pastProjects.yaml` | Past Projects (Projects page). |
 | `awards.yaml` | Honors & Awards (Projects page). |
 | `life.yaml` | Candid photo cards + captions (Life page). |
-| `socials.yaml` | Social links in the hero and footer. |
+| `socials.yaml` | Social links in the hero and footer. Each entry has a `url`, an `icon` id (`linkedin`, `github`, or `scholar`) mapped to a [react-icons](https://react-icons.github.io/react-icons/) glyph in `SocialLinks.js`/`Footer.js`, and an optional short `label`. |
 
 To add a photo to the **Life** page: drop the image in [`public/gallery/`](public/gallery)
 and add an entry to `life.yaml` with its `image` path (relative to `public/`) and a
@@ -36,7 +36,7 @@ add inline links with `[text](https://url)`.
 ## Pages
 
 The site is split into tabs (routes), one file each in [`src/pages/`](src/pages):
-`Home`, `Research`, `Experience`, and `Projects`.
+`Home`, `Research`, `Experience`, `Projects`, and `Life`.
 
 ## Develop & deploy
 

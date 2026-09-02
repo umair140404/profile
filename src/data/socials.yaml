@@ -1,8 +1,12 @@
+# icon: maps to a react-icons glyph in SocialLinks.js (linkedin | github | scholar)
+# label: optional short visible text; falls back to name
 - name: LinkedIn
   url: https://www.linkedin.com/in/umair14040
-  icon: icons/linkedin-icon.svg
-  darkThemeIcon: icons/linkedin-icon.svg
+  icon: linkedin
 - name: GitHub
   url: https://github.com/umair140404
-  icon: icons/github-icon.svg
-  darkThemeIcon: icons/github-icon-inverted.svg
+  icon: github
+- name: Google Scholar
+  url: https://scholar.google.com/citations?user=qDlFRMAAAAAJ&hl=en
+  icon: scholar
+  label: Google Scholar

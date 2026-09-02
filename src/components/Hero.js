@@ -46,7 +46,6 @@ const Hero = () => {
             >
               {profile.email}
             </a>
-            <span className="text-base-content/50"> · {profile.location}</span>
           </div>
 
           <SocialLinks />
